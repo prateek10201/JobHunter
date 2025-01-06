@@ -52,18 +52,18 @@
 				</div>
 			</div>
 		</nav>
-	
+
+
 		<div class="container mt-5">
 			<div class="row justify-content-center">
 				<div class="col-md-6">
 					<div class="card">
 						<div class="card-body">
-							<h2 class="mb-3 text-center fs-3 font-weight-bold">Post a new
-								Job</h2>
+							<h2 class="mb-3 text-center fs-3 font-weight-bold">Post a new Job</h2>
 							<form:form action="handleForm" method="post" modelAttribute="jobPost">
 								<div class="mb-1">
-									<label for="postId" class="form-label">Post ID</label> <input
-										type="text" class="form-control" id="postId" name="postId"
+									<label for="postId" class="form-label">Post ID</label>
+									<input type="number" class="form-control" id="postId" name="postId"
 										required>
 								</div>
 	

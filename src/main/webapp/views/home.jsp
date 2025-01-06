@@ -50,8 +50,7 @@ p {
 				<ul class="navbar-nav ms-auto">
 					<li class="nav-item"><a class="nav-link" href="home">Home</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="viewalljobs">All
-							Jobs</a></li>
+					<li class="nav-item"><a class="nav-link" href="viewalljobs">All Jobs</a></li>
 
 					<li class="nav-item"><a class="nav-link"
 						href="https://www.linkedin.com/in/prateek-choudavarpu/">Contact</a></li>
@@ -69,7 +68,7 @@ p {
 						<h5 class="card-title">View AllJobs</h5>
 						<form action="/viewalljobs" method="get">
 							<!-- Add your form fields here -->
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-primary">View All Jobs</button>
 						</form>
 					</div>
 				</div>
@@ -82,8 +81,7 @@ p {
 						<h5 class="card-title">Add Job</h5>
 						<form action="/addjob" method="get">
 							<!-- Your form fields go here if needed -->
-
-							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="submit" class="btn btn-primary">Add Job</button>
 						</form>
 
 					</div>

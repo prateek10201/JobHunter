@@ -2,8 +2,8 @@
 <%@ taglib prefix="ab" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page isELIgnored="false"%>
 <%@ page import="java.util.List" %>
-<%@ page import="com.telusko.JobApp.model.JobPost" %>
-<%@ page import="com.telusko.JobApp.repo.JobRepo" %>
+<%@ page import="com.springprojects.JobHunter.model.JobPost" %>
+<%@ page import="com.springprojects.JobHunter.repository.JobRepo" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,23 +44,23 @@
             <div class="col mb-4">
                 <div class="card border-dark bg-dark text-white">
                     <div class="card-body">
-                        <h5 class="card-title">${jobPost.postProfile}</h5>
+                        <h5 class="card-title">${jobPost.getPostProfile()}</h5>
                          <p class="card-text">
                             <strong>Job-Id: </strong>
-                            ${jobPost.postId}
+                            ${jobPost.getPostId()}
                         </p>
                         <p class="card-text">
                             <strong>Description:</strong>
-                            ${jobPost.postDesc}
+                            ${jobPost.getPostDesc()}
                         </p>
                         <p class="card-text">
                             <strong>Experience Required:</strong>
-                            ${jobPost.reqExperience} years
+                            ${jobPost.getReqExperience()} years
                         </p>
                         <p class="card-text">
                             <strong>Tech Stack Required:</strong>
                             <ul>
-                                <ab:forEach var="tech" items="${jobPost.postTechStack}">
+                                <ab:forEach var="tech" items="${jobPost.getPostTechStack()}">
                                     <li>${tech}</li>
                                 </ab:forEach>
                             </ul>
