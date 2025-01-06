@@ -17,27 +17,72 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="style1.css">
 <style>
+
+body{
+background-color: #1D3557;
+}
+
 h2 {
-	font-size: 16px;
-	margin-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 p {
-	font-size: 12px;
-	margin: 0;
+    font-size: 12px;
+    margin: 0;
 }
 
- .bg-clr{
-        background-color:#f1faee;
-        }
- 
-        
+.bg-clr {
+    background-color: #1D3557;
+}
+
+.navbar {
+    background-color: #F5EBE0;
+    border-bottom: 2px solid #1D3557;  /* Dark blue border */
+}
+
+.navbar-brand {
+    color: #1D3557;
+}
+
+.nav-link {
+    color: #1D3557 !important;  /* Dark blue text */
+}
+
+.nav-link:hover {
+    color: #457B9D !important;  /* Lighter blue on hover */
+}
+
+.card {
+    background-color: #F5EBE0;  /* Cream background */
+    border: 2px solid #1D3557;  /* Dark blue border */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(29, 53, 87, 0.2);  /* Dark blue shadow */
+}
+
+.card-title {
+    color: #1D3557;  /* Dark blue text */
+}
+
+.btn-primary {
+    background-color: #1D3557 !important;  /* Dark blue background */
+    border-color: #1D3557 !important;  /* Dark blue border */
+}
+
+.btn-primary:hover {
+    background-color: #457B9D !important;  /* Lighter blue on hover */
+    border-color: #457B9D !important;
+}
 </style>
 </head>
 <body>
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-clr">
+	<nav class="navbar navbar-expand-lg navbar-light">
 		<div class="container">
 			<a class="navbar-brand fs-1 fw-medium " href="#"> Job Portal Web App</a>
 			<button class="navbar-toggler" type="button"
@@ -63,7 +108,7 @@ p {
 		<div class="row">
 			<!-- Card 1 -->
 			<div class="col-md-6 mb-5">
-				<div class="card bg-warning">
+				<div class="card">
 					<div class="card-body text-center">
 						<h5 class="card-title">View AllJobs</h5>
 						<form action="/viewalljobs" method="get">

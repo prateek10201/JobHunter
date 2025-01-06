@@ -17,22 +17,96 @@
 		crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style1.css">
+
 	<style>
-	h2 {
-		font-size: 16px;
-		margin-bottom: 5px;
-	}
-	
-	p {
-		font-size: 12px;
-		margin: 0;
-	}
-	</style>
+
+	body{
+    background-color: #1D3557;
+    }
+
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .navbar {
+        background-color: #F5EBE0 !important;  /* Cream color */
+        border-bottom: 2px solid #1D3557;
+    }
+
+    .navbar-brand {
+        color: #1D3557 !important;
+    }
+
+    .nav-link {
+        color: #1D3557 !important;
+    }
+
+    .nav-link:hover {
+        color: #457B9D !important;
+    }
+
+    .card {
+        background-color: #F5EBE0;
+        border: 2px solid #1D3557;
+        box-shadow: 0 4px 8px rgba(29, 53, 87, 0.1);
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .form-label {
+        color: #1D3557;
+        font-weight: 500;
+    }
+
+    .form-control, .form-select {
+        border: 1px solid #1D3557;
+        background-color: #fff;
+    }
+
+    .form-control:focus, .form-select:focus {
+        border-color: #457B9D;
+        box-shadow: 0 0 0 0.2rem rgba(69, 123, 157, 0.25);
+    }
+
+    .btn-primary {
+        background-color: #1D3557 !important;
+        border-color: #1D3557 !important;
+    }
+
+    .btn-primary:hover {
+        background-color: #457B9D !important;
+        border-color: #457B9D !important;
+    }
+
+    /* Style for multiple select */
+    select[multiple] {
+        height: 200px;
+    }
+
+    option:checked {
+        background-color: #1D3557 !important;
+        color: white !important;
+    }
+
+    .text-center {
+        color: #1D3557;
+    }
+    </style>
+
 	</head>
 	<body>
 	
 	
-		<nav class="navbar navbar-expand-lg navbar-light bg-warning">
+		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container">
 				<a class="navbar-brand fs-1 fw-medium" href="#"> Job Portal Web App</a>
 				<button class="navbar-toggler" type="button"

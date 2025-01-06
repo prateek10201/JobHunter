@@ -14,22 +14,98 @@
         rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
+
     <style>
-        .card {
-            border: 2px solid #343a40; /* Dark border color */
-            background-color: #f8f9fa; /* Light background color */
-            margin-bottom: 20px;
-        }
-        
-        .bg-clr{
-        background-color:#f1faee;
-        }
+
+    body{
+        background-color: #1D3557;
+    }
+
+    .navbar {
+        background-color: #F5EBE0;
+        border-bottom: 2px solid #1D3557;
+    }
+
+    .navbar-brand {
+        color: #1D3557 !important;
+    }
+
+    .nav-link {
+        color: #1D3557 !important;
+    }
+
+    .nav-link:hover {
+        color: #457B9D !important;
+    }
+
+    .page-title {
+        color: #1D3557;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .card {
+        background-color: #F5EBE0;
+        border: 2px solid #F5EBE0;
+        box-shadow: 0 4px 8px rgba(29, 53, 87, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    .card-body {
+        padding: 2rem;
+    }
+
+    .card-title {
+        color: #1D3557;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-text {
+        color: #1D3557;  /* Cream text */
+        margin-bottom: 1rem;
+    }
+
+    .card-text strong {
+        color: #1D3557;
+    }
+
+    .card-text ul {
+        padding-left: 1.5rem;
+    }
+
+    .card-text li {
+        color: #1D3557;
+        margin: 0.3rem 0;
+    }
+
+    .card-footer {
+        background-color: #152A45;
+        border-top: 1px solid #2A4A73;
+    }
+
+    .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    h2.text-center {
+        color: #F5EBE0;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
     </style>
+
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-clr">
+<nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
         <a class="navbar-brand fs-1 fw-medium" href="#">Job Portal Web App</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -54,11 +130,11 @@
 
 
 <div class="container mt-5">
-    <h2 class="mb-4 text-center font-weight-bold">Job Post Details</h2>
+    <h2 class="mb-4 text-center page-title">Job Post Details</h2>
 
     <div class="row justify-content-center">
         <div class="col-md-6">
-            <div class="card border-dark bg-dark text-white">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">${jobPost.getPostProfile()}</h5>
                     <p class="card-text">
